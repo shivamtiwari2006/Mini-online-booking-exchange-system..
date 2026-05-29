@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookSwap - Online Book Exchange</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    header{
+      background:#4a148c;
+      color:white;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      font-size:30px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd54f;
+    }
+
+    .hero{
+      height:90vh;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:22px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      padding:15px 30px;
+      background:#ff9800;
+      color:white;
+      border:none;
+      border-radius:5px;
+      font-size:18px;
+      cursor:pointer;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#e68900;
+    }
+
+    .features{
+      padding:60px 40px;
+      text-align:center;
+    }
+
+    .features h2{
+      margin-bottom:40px;
+      font-size:40px;
+      color:#4a148c;
+    }
+
+    .feature-box{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      width:300px;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#4a148c;
+    }
+
+    footer{
+      background:#4a148c;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero-content h2{
+        font-size:35px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📚 BookSwap</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Books</a>
+      <a href="#">Upload</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Exchange & Borrow Books Easily</h2>
+      <p>
+        A smart platform for students to lend, exchange,
+        and request books online.
+      </p>
+
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+
+    <h2>Our Features</h2>
+
+    <div class="feature-box">
+
+      <div class="card">
+        <h3>📖 Upload Books</h3>
+        <p>
+          Students can upload books they want to lend or exchange.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💬 Chat Feature</h3>
+        <p>
+          Connect directly with users and request books instantly.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🔍 Easy Search</h3>
+        <p>
+          Search books by category, title, or author name.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 BookSwap | Mini Online Book Exchange System
+    </p>
+  </footer>
+
+</body>
+</html>
